@@ -85,6 +85,7 @@ def do_it():
 
 def main():
     ''' Main entry point of the app '''
+    do_it()
     schedule.every(RUNMINS).minutes.do(do_it)
     while True:
         schedule.run_pending()
